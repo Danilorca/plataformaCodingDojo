@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Daniela Lorca</title>
+  <style>
+    .rrss{
+      display: inline-flex;
+    }
+    a {
+      margin-left: 5px;
+    }
+    th,  td{
+      border-right: 1px solid rgb(166, 0, 255);
+      border-bottom: 1px solid rgb(166, 0, 255);
+    }
+
+    th:last-child, td:last-child{
+      border-right: none;
+    }
+
+    tr:last-child td{
+      border-bottom: none;
+    }
+
+
+    /* .fila_4{
+      border-bottom: none;
+    } */
+
+    .img_code{
+      border: 1px solid rgb(0, 0, 0);
+    }
+    .contact{
+      display: inline-block;
+    }
+
+
+
+  </style>
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/dc67210de4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section>
+    <div class="profile">
+      <h1>Daniela Lorca</h1>
+      <img src="/img/Daniela_lorca_foto.png" alt="picture_Daniela_Lorca" width="100px"> <br>
+      <div class="rrss">
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/Danilorca" target="_blank">My github</a>
+      </div>
+      <div class="rrss">
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/danielalorca" target="_blank">My linkedin</a>
+      </div>
+      <div class="rrss">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:daniela.lorca.r@gmail.com" target="_blank">My email</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="technologies">
+    <h2>Technologies</h2>
+    <table>
+      <tr>
+        <th>Front-End</th>
+        <th>Python</th>
+        <th>JavaScript</th>
+        <th>Database</th>
+        <th>Concept</th>
+      </tr>
+      <tr>
+        <td>HTML 5</td>
+        <td>Django</td>
+        <td>Express</td>
+        <td>MySQL</td>
+        <td>AJAX</td>
+      </tr>
+      <tr>
+        <td>CSS3</td>
+        <td>Flask</td>
+        <td>Mongoose</td>
+        <td>MongoDB</td>
+        <td>OOP</td>
+      </tr>
+      <tr>
+        <td class="fila_4">Bootstrap</td>
+        <td class="fila_4">Unittest</td>
+        <td class="fila_4">React</td>
+        <td class="fila_4"></td>
+        <td class="fila_4">REST</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="social_Snakes">
+    <h2>Social Snakes</h2>
+    <img class="img_code" src="/img/code.png" alt="code" width="100">
+    <p>Social Media App mode in Python - <a href="">code</a> | <a href="">deployed</a></p>
+  </section>
+
+  <section class="contact_me">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" size="8" maxlength="30">
+    </div>
+    <div class="contact">
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email" size="8" maxlength="30">
+    </div>
+    <div><br>
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" cols="30" rows="2"></textarea>
+    </div><br>
+    <input type="submit" name="send" id="send" value="Send Message">
+  </section>
+
+
+
+
+
+
+
+</body>
+</html>

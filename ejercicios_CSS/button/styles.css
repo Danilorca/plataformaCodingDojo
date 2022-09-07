@@ -1,0 +1,45 @@
+.container{
+  display: flex;
+  flex-direction: column ;
+  margin: 40px;
+
+}
+
+
+#btnSearch{
+  background-color: rgb(255, 250, 243);
+  border: 2px solid #1EA0A2;
+  color:#1EA0A2;
+  border-radius: 20px;
+  width: 150px;
+  padding: 5px 0;
+  font-style: 600;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#btnMas{
+background-color:#1EA0A2;
+color: white;
+border-radius: 100%;
+border: none;
+width: 30px;
+height: 30px;
+text-align: center;
+margin-bottom: 10px;
+font-size: 20px;
+
+}
+
+#btnCreateAcount{
+  background-color: #2B78E4;
+  color: white;
+  text-decoration: none;
+  border: 1 solid black;
+  width: 180px;
+  padding: 5px 0;
+  box-shadow: 4px 4px 1px 2px rgb(0, 0, 0);
+  font-size: 16px;
+
+}

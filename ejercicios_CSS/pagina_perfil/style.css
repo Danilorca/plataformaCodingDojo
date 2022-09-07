@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*HEADER*/
+
+
+header{
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  justify-content: center;
+}
+
+nav{
+  width: 1000px;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+ul{
+  display: flex;
+  list-style: none;
+}
+
+li{
+  color: aliceblue;
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+
+.logo{
+  font-size: 24px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.btn{
+  padding: 3px 8px;
+  background-color: rgb(0, 179, 255);
+}
+
+/*CARDS*/
+
+
+.container{
+display: flex;
+/* background-color: rgb(255, 241, 241); */
+width: 1000px;
+margin: 0 auto;
+gap: 170px;
+}
+
+.col-izquierda {
+display: flex;
+flex-direction: column;
+gap: 30px;
+width: 50%;
+
+}
+
+.col-derecha {
+display: flex;
+flex-direction: column;
+gap: 30px;
+width: 50%;
+}
+
+
+.container-section{
+  width: 1200px;
+  gap: 50px
+}
+
+.box-card{
+  width: 550px;
+  height: auto;
+  border: 1px solid rgb(41, 41, 41);
+  margin-top: 50px ;
+}
+
+.banner{
+  width: inherit;
+  height: 80px;
+  background-color: blueviolet;
+  display: flex;
+}
+
+
+.icon{
+  width: 70px;
+  height: 70px;
+  margin-top: 40px;
+  margin-left: 40px;
+  border: 5 solid black;
+  background-color: rgb(226, 159, 237);
+  border-radius: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-solid, .fas .user {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 32px;
+  padding-top: 17px;
+}
+
+.profile{
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+h1{
+ padding-top: 20px;
+}
+
+.location{
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.map{
+  margin-top: 10px;
+  width: 10px;
+  height: auto;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.skills{
+ padding-top: 15px;
+}
+
+.contact{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.gear{
+  width: 15px;
+  height: auto;
+}
+
+a{
+  font-size: 14px;
+  color: rgb(5, 106, 106);
+  text-decoration: underline;
+}
+
+
+/*Education*/
+.box-education{
+  width: 550px;
+  height: auto;
+  border: 1px solid rgb(41, 41, 41);
+}
+
+
+.title-education{
+  padding-left: 40px;
+  color: white;
+}
+
+.education-dojo{
+  padding-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.card-conection{
+  border: 1px solid rgb(41, 41, 41);
+  margin-top: 50px;
+  width: 300px;
+}
+
+.banner-conection{
+  background-color: blueviolet;
+  height: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.number-conection{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.box-conection{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+.icon-user, .check-positive, .check-negative {
+  width: 25px;
+  height: 25px;
+}
+
+/*YOUR CONECTION*/
+.card-your-conection{
+ border: 1px solid rgb(0, 0, 0);
+ width: 300px;
+}
+
+.box-follow{
+  display: flex;
+  align-items: baseline;
+  margin-top: 10px;
+  gap: 25px;
+  padding-left: 60px;
+}
+
+.number-follow{
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.view-more{
+  margin-top: 10px;
+  padding: 5px 0;
+  border: 1px solid rgb(0, 0, 0);
+  padding-left: 60px;
+  color: blueviolet;
+  text-decoration: underline;
+}

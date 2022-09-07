@@ -1,0 +1,31 @@
+/*No sé que tipografía tiene el ejercicio, yo puse una de google font nomás.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+*{
+  font-family: 'Paytone One', sans-serif;
+  padding: 5px;
+}
+
+h1{
+  background-color: black;
+  color:white
+}
+span{
+  color: aqua;
+}
+
+h2{
+  background-color: rgb(113, 0, 151);
+  color:white ;
+  text-align: center;
+  font-style: italic;
+  font-size: 22px;
+}
+
+h3{
+  background-color: rgb(107, 176, 241);
+  color: black;
+  text-decoration: underline;
+  text-align: end;
+}

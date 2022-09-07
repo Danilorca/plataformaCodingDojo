@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h1 class="nav-title">DojoWeather</h1>
+            <ul class="nav-links">
+                <li><a onclick="displayAlert()" href="#">Burbank</a></li>
+                <li><a href="#">Chicago</a></li>
+                <li><a href="#">Dallas</a></li>
+            </ul>
+        </div>
+        <div class="box-top">
+            <h1>San Jose</h1>
+            <div class="box-top-rigth">
+                <h5>show temperature in</h5>
+                <select name="temperatura" id="temperatura" onchange="convertTemp()">
+                    <option value="°C">°C</option>
+                    <option value="°F">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="box-med">
+            <div class="today">
+                <h2 class="days">Today</h2>
+                <img src="./assets/some_rain.png" alt="image weather">
+                <h5>Some rain</h5>
+                <div class="today-bott">
+                    <h2 class="tempMax tempera">24°</h2>
+                    <h2 class="tempMin tempera">18°</h2>
+                </div>
+            </div>
+            <div class="tomorrow">
+                <h2 class="days">Tomorrow</h2>
+                <img src="./assets/some_sun.png" alt="image weather">
+                <h5>Some sun</h5>
+                <div class="tomorrow-bott">
+                    <h2 class="tempMax tempera">27°</h2>
+                    <h2 class="tempMin tempera">19°</h2>
+                </div>
+            </div>
+            <div class="friday">
+                <h2 class="days">Friday</h2>
+                <img src="./assets/some_clouds.png" alt="image weather">
+                <h5>Some clouds</h5>
+                <div class="friday-bott">
+                    <h2 class="tempMax tempera">21°</h2>
+                    <h2 class="tempMin tempera">16°</h2>
+                </div>
+            </div>
+            <div class="saturday">
+                <h2 class="days">Saturday</h2>
+                <img src="./assets/some_sun.png" alt="image weather">
+                <h5>Some sun</h5>
+                <div class="saturday-bott">
+                    <h2 class="tempMax tempera">26°</h2>
+                    <h2 class="tempMin tempera">21°</h2>
+                </div>
+            </div>
+        </div>
+        <div class="box-bott" id="box-bott">
+            <img src="./assets/cookie.png" alt="image cookie">
+            <div class="box-bott-text">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads,
+                    to provide social features and to analyse our trafic.<a href="#">Read more...</a></p>
+            </div>
+            <button onclick="onClickHidden()">I Accept</button>
+        </div>
+    </div>
+</body>
+</html>
