@@ -45,8 +45,9 @@ let cardFriday = document.getElementById("cardFriday");
 let cardSaturday = document.getElementById("cardSaturday");
 
 console.log(saturdayMinimaF)
+//cambiar la temperatura por card, Today
 function cambiarTemperatura() {
-  if(selectTemperatura.value === "F"){
+  if (selectTemperatura.value === "F") {
     cardToday.innerHTML = `
     <h2 class="maxima">${todayMaximaF}°</h2>
     <h2 class="minima">${todayMinimaF}°</h2>
@@ -57,20 +58,20 @@ function cambiarTemperatura() {
     <h2 class="minima">${todayMinimaC}°</h2>
     `;
   }
-  //cardTomorrow
-  if(selectTemperatura.value === "F"){
+  //cambiar la temperatura por card, Tomorrow
+  if (selectTemperatura.value === "F") {
     cardTomorrow.innerHTML = `
     <h2 class="maxima">${tomorrowMaximaF}°</h2>
     <h2 class="minima">${tomorrowMinimaF}°</h2>
     `;
   } else {
-    cardTomorrow.innerHTML =`
+    cardTomorrow.innerHTML = `
     <h2 class="maxima">${tomorrowMaximaC}°</h2>
     <h2 class="minima">${tomorrowMinimaC}°</h2>
-    `
+    `;
   }
-  //cardFriday
-  if(selectTemperatura.value === "F"){
+  //cambiar la temperatura por card,, Friday
+  if (selectTemperatura.value === "F") {
     cardFriday.innerHTML = `
     <h2 class="maxima">${fridayMaximaF.toFixed(1)}°</h2>
     <h2 class="minima">${fridayMinimaF}°</h2>
@@ -81,8 +82,8 @@ function cambiarTemperatura() {
     <h2 class="minima">${fridayMinimaC}°</h2>
     `;
   }
-  //cardSaturday
-  if(selectTemperatura.value === "F"){
+  //cambiar la temperatura por card, Saturday
+  if (selectTemperatura.value === "F") {
     cardSaturday.innerHTML = `
     <h2 class="maxima">${saturdayMaximaF.toFixed(1)}°</h2>
     <h2 class="minima">${saturdayMinimaF.toFixed(1)}°</h2>
