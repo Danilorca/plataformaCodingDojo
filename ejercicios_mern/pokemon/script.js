@@ -26,41 +26,59 @@ const pokemon = Object.freeze([
 
 
 /* Una serie de objetos Pokémon donde la identificación es divisible por 3 */
-
 const pokemonesDivisible = pokemon.filter(divisiblesPorTres);
-//----->porque la coma del pokemon, id?
-function divisiblesPorTres(pokemon,id){
-  return pokemon,id % 3 === 0;
+function divisiblesPorTres(pokemon,i){
+  return pokemon.id % 3 === 0;
 }
 //console.log(pokemonesDivisible);
+/*
+const pokemonesDivisible2 = pokemon.filter((pokemon, i) => {
+  console.log(i);
+  return pokemon.id % 3 === 0;
+});
+
+ */
+
+
+
+
 
 /* Una serie de objetos Pokémon que son del tipo "fuego" */
-//----->se puede hacer una búsqueda por 2 indices [0],[1] ejemplo de abajo?
 const pokemonesFuego = pokemon.filter(pokemon => pokemon.types[0]=== "fire" || pokemon.types[1] === "fire")
-//console.log(pokemonesFuego);
+console.log(pokemonesFuego);
+
+
+
+
 
 
 /* Una variedad de objetos Pokémon que tienen más de un tipo */
-// ---->como podría hacer un pokemon.types de más de 2 elementos?
-const pokemonesConTipos = pokemon.filter(pokemon => pokemon.types.length === 2)
-//console.log(pokemonesConTipos)
+const pokemonesConTipos = pokemon.filter(pokemon => pokemon.types.length >1)
+console.log(pokemonesConTipos)
 
 /* Una matriz con solo los nombres de los Pokémon */
 const nombrePokemon = pokemon.map(pokemon => pokemon.name);
-//console.log(nombrePokemon)
+console.log(nombrePokemon)
 
 /* Una matriz con solo los nombres de Pokémon con una identificación mayor que 99 */
 const pokemonConIdentificacion = pokemon.filter(pokemon => pokemon.id> 99)
 const pokemonNameIdentificacion = pokemonConIdentificacion.map(pokemon => pokemon.name)
-//console.log(pokemonConIdentificacion);
-//console.log(pokemonNameIdentificacion);
+console.log(pokemonConIdentificacion);
+console.log(pokemonNameIdentificacion);
+
+/* Es lo mismo que esto */
+const pokemonConIdentificacion1 = pokemon
+  .filter((pokemon) => pokemon.id > 99)
+  .map((pokemon) => pokemon.name);
+console.log(pokemonConIdentificacion1);
+
+
 
 /* Una matriz con solo los nombres del pokémon cuyo único tipo es veneno */
-const pokemonesVenenosos = pokemon.filter(pokemon => pokemon.types[0] === "poison" || pokemon.types[1]==="poison" );
-//console.log(pokemonesVenenosos)
+//const pokemonesVenenosos = pokemon.filter(pokemon => pokemon.types[0] === "poison" || pokemon.types[1]==="poison" );
+const pokemonesVenenosos1 = pokemon.filter((pokemon) => pokemon.types.length===1 && pokemon.types[0]==="poison") ;
+console.log(pokemonesVenenosos)
 
 /* Una matriz que contiene solo el primer tipo de todos los Pokémon cuyo segundo tipo es "volador" */
-const pokemonesVoladores = pokemon.filter(
-  (pokemon) => pokemon.types[1] === "flying"
-);
-//console.log(pokemonesVoladores)
+const pokemonesVoladores = pokemon.filter((pokemon) => pokemon.types[1] === "flying").map(pokemon =>({name:pokemon.name,Type:pokemon.types[0]}))
+console.table(pokemonesVoladores)
